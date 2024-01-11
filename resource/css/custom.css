@@ -1,0 +1,194 @@
+     /* Your previous styles */
+     body {
+        background-color: skyblue;
+        color: navy;
+        font-family: Arial, sans-serif;
+        padding-top: 75px;
+    }
+    .navbar {
+        background-color: skyblue;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-brand {
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: skyblue;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background-color: white;
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: navy;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: white;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+        background-color: skyblue;
+    }
+    .navbar-brand img {
+        max-height: 40px; /* Adjust the height as needed */
+        margin-right: 10px; /* Add some spacing between logo and text */
+        /* Other logo styles */
+    }
+    .container {
+        margin-top: 50px;
+    }
+
+    .card {
+        
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Adding shadow effect */
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .card-header {
+        background-color: skyblue;
+        color: white;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+    }
+
+    .form-control {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    .btn-primary {
+        background-color: navy;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .btn-primary:hover {
+        background-color: blue;
+    }
+
+    .signup-link {
+        text-align: center;
+    }
+
+    .signup-link a {
+        color: red;
+    }
+
+    /* Additional styles for sign-up form */
+    .signup-form {
+        display: none;
+    }
+
+    .signup-form .card-header {
+        background-color: skyblue;
+    }
+
+    .signup-form .form-control {
+        background-color: lightblue;
+        color: navy;
+    }
+
+    .signup-form .btn-primary {
+        background-color: red;
+    }
+
+    .signup-form .btn-primary:hover {
+        background-color: darkred;
+    }
+
+    /* Adjust any other styles as needed */
+    /* Additional styles for input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: white;
+        color: navy;
+    }
+.card {
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+.slide-left-enter,
+    .slide-left-leave-to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .slide-left-enter-active,
+    .slide-left-leave-active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .slide-right-enter,
+    .slide-right-leave-to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .slide-right-enter-active,
+    .slide-right-leave-active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .footer {
+        background-color: navy;
+        color: white;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.4); /* Adding top shadow effect */
+    }
+    /* Search icon style */
+    .search-icon {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .search-input {
+        display: none;
+        transition: width 0.3s ease-in-out;
+        width: 0;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: transparent;
+        color: white;
+        outline: none;
+    }
+
+    .search-input.show {
+        display: block;
+        width: 150px; /* Adjust the width as needed */
+    }
+
+    .search-input:focus {
+        width: 150px; /* Adjust the width as needed */
+    }
