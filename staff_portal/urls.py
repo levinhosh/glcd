@@ -1,8 +1,10 @@
 from django.urls import path
-from . import views
+from .views import MemberLogin
 
+
+app_name = "staff_portal"
 urlpatterns = [
     # Define URL patterns for your app
     # Example:
-    path('', views.memberlogin, name='memberlogin'),
+    path('', MemberLogin.as_view(), name='MemberLogin'),
 ]

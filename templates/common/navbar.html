@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GLC | Member</title>
+    <!-- Bootstrap CSS -->
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Font Awesome CSS -->
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+    
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/logo.jpg' %}" alt="Church Logo"> <!-- Replace path_to_your_image with your image path -->
+                Glory Land Church
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ministriesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ministries
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="ministriesDropdown">
+                            <a class="dropdown-item" href="#">Youth</a>
+                            <a class="dropdown-item" href="#">Children</a>
+                            <a class="dropdown-item" href="#">Men</a>
+                            <a class="dropdown-item" href="#">Women</a>
+                            <a class="dropdown-item" href="#">Elders</a>
+                            <!-- Add more submenu items as needed -->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sermons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Log In
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <a class="dropdown-item" href="#">Member</a>
+                            <a class="dropdown-item" href="#">Staff</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search-icon" href="#" onclick="toggleSearch()">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <input type="text" class="form-control search-input" placeholder="Search" aria-label="Search">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+{% block body_content %}
+
+{% endblock body_content %}
+
+    
+

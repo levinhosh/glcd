@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'staff_portal',
+    'glc_common',
 ]
 
 MIDDLEWARE = [
